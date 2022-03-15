@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor's List</title>
+    <style>
+        #cont{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #d1a7a7;
+}
+
+#navbar{
+    text-align: center;
+    font-size: 60px;
+    background-color: #d1a7a7;
+    border-radius: 40px;
+}
+.full{
+    display: flex;
+    flex-direction: column;
+    /* background-color:  */
+}
+.PI{
+    height: 140px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    text-align: center;
+    
+
+}
+.info{
+    padding-top: 20px;
+}
+.container1
+{
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding-top: 60px;
+    height: 70px;
+}
+.EDD{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-left: 300px;
+    font-size: 30px;
+    
+
+}
+#EDD{
+    display: flex;
+    
+}
+.RD{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 300px;
+    font-size: 30px;
+}
+.container2
+{
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding-top: 30px;
+    height: 70px;
+}
+
+.QD{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-left: 300px;
+    font-size: 30px;
+    
+    /* padding-top: 100px; */
+}
+.QRe{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 300px;
+    font-size: 30px;
+    /* padding-top: 100px; */
+}
+.container3{
+     /* display: flex; */
+    /* flex-direction: row; */
+    padding-top: 30px;
+    height: 70px;
+
+}
+.QR{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-left: 300px;
+    font-size: 30px;
+    padding-right: 400px;
+    /* padding-top: 300px; */
+
+    
+}
+/* .btn{
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+} */
+
+
+
+input{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: groove;
+    background-color: #d1a7a7;;
+}
+button{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    border-color: blue;
+    cursor: pointer;
+    
+}
+input[type=submit]{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    border-color: blue;
+    cursor: pointer;
+    color: white;
+    
+    
+}
+input[type=submit]:hover{
+background-color: blueviolet;
+color: black;
+}
+input[type=reset]{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    border-color: blue;
+    cursor: pointer;
+    color: white;
+    
+}
+input[type=reset]:hover{
+    background-color: blueviolet;
+    color: black;
+}
+.btn{
+    display: inline-block;
+    flex-direction: row;
+    padding-top: 20px;
+}
+/* .info input{
+    border-bottom-style: none;
+} */
+#qs{
+  
+border-radius: 100px;
+   text-align: center;
+   background-color: #d1a7a7;
+    font-size: 20px;
+}
+
+
+    </style>
+    <!-- <script src="intel.js"></script> -->
+
+</head>
+
+<body >
+    <div id="cont">
+    <nav id="navbar">Check Vendor Performance</nav>
+    <form class="Full" action="/myaction.php" name="myform" onsubmit="return validateform()" method="post">
+        <div class="PI">
+            <div class="info"> Name <input type="text" name="fname" id="name" required maxlength="20"> <span
+                    class="formerror"> </span>
+            </div>
+
+            <div class="info"> BITS ID <input type="text" name="fID" required> <b><span class="formerror"></span></b>
+            </div>
+            <div class="info"> Phone Number <input type="phone" name="fphone" id="" min="10" max="10" required><b><span
+                        class="formerror"> </span></b></div>
+        </div>
+        <div class="container1">
+            <div class="EDD">
+                Expected Delivery date <input type="date" name="edd" id="EDD" required> <b><span
+                        class="formerror"></span></b>
+            </div>
+            <div class="RD">
+                Received Date <input type="date" name="rd" id="RD" required><b><span class="formerror"></span></b>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="QD">
+                Quality Demanded <input type="number" name="qd" id="QD" placeholder="Quality Demanded" required><b><span
+                        class="formerror"></span></b>
+            </div>
+            <div class="QRe">
+                Quantity Received <input type="number" name="qre" id="QRe" placeholder="Quality Received" required><b><span
+                        class="formerror"></span></b>
+            </div>
+
+        </div>
+        <div class="container3">
+            <div class="QR">
+                Quantity Returned <input type="number" name="qr" id="QR" placeholder="Quantity Returned" required><b><span
+                        class="formerror"></span></b>
+            </div>
+            <div class="btn"><input type="submit" value="Submit" id="submit-btn" onclick='check();return false' /></div>
+            <div class="btn"><input type="reset" value="Clear" onclick="clear()"></div>
+        </div>
+    </form>
+
+    <div id="qs">
+      
+        <p id="f1"></p>
+        <p id="f2"></p>
+        <p id="f3"></p>
+        <p id="f4"></p>
+        <p id="f5"></p>
+        <p id="f6"></p>
+        <!-- <p id="f7"></p> -->
+    </div>
+
+</div>
+
+
+
+
+    <script>
+function check(){
+    document.getElementById('f1').innerHTML= "Your name is " + document.myform.fname.value;
+    document.getElementById('f2').innerHTML="Expected Deleviry date: " + document.myform.edd.value;
+    document.getElementById('f3').innerHTML="Received Date: " + document.myform.rd.value;
+    document.getElementById('f4').innerHTML="Quantity Demanaded: " + document.myform.qd.value;
+    document.getElementById('f5').innerHTML="Quantity Received: " + document.myform.qre.value;
+    document.getElementById('f6').innerHTML="Quantity Returned: " + document.myform.qr.value;
+    // document.getElementById('f7').innerHTML="Difference Between the Expected Date and Received date is "+ (document.myform.rd.value-document.myform.edd.value);
+    
+
+
+}
+
+
+
+
+
+    </script>
+</body>
+
+</html>
